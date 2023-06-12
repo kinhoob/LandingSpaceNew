@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem ao Espaço</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logoastro.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <a href="">Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-principal">
+            <div float class="conteudo-principal-escrito">
+                <h2 class="titulo">Viagem ao Espaço - Descobrindo as Fronteiras do Universo</h2>
+                <p class="apresentacao"> Bem-vindos, ladies and gentlemen! Hoje, embarcaremos em uma emocionante jornada
+                    rumo às
+                    estrelas, explorando as maravilhas do espaço sideral. Preparem-se para descobrir as fronteiras do
+                    universo em
+                    nossa viagem ao espaço!</p>
+                <button class="ler-mais">Leia Mais</button>
+
+                <p class="conteudo-escondido">O universo é um vasto e misterioso lugar, cheio de planetas, estrelas,
+                    galáxias e
+                    muito mais. No entanto, o ser humano sempre ansiou por explorar além das fronteiras terrestres,
+                    buscando
+                    respostas para as grandes perguntas sobre nossa existência.
+                    A exploração espacial teve seu início com a corrida espacial entre os Estados Unidos e a União
+                    Soviética
+                    durante a Guerra Fria. Em 1969, a missão Apollo 11 alcançou a Lua, marcando um marco histórico na
+                    exploração
+                    espacial. <br>
+                    Desde então, as missões tripuladas evoluíram, com astronautas realizando caminhadas espaciais,
+                    construindo
+                    estações espaciais, como a Estação Espacial Internacional, e realizando pesquisas científicas em
+                    ambiente de
+                    microgravidade.
+                    Viajar ao espaço apresenta inúmeros desafios técnicos e físicos. A falta de gravidade, a radiação
+                    cósmica, a
+                    necessidade de sistemas de suporte de vida e a logística são apenas algumas das dificuldades a serem
+                    superadas. <br>
+                    Atualmente, vivemos uma nova era emocionante da exploração espacial. Empresas privadas, como a
+                    SpaceX, estão
+                    revolucionando a indústria aeroespacial, desenvolvendo foguetes reutilizáveis e tornando as viagens
+                    espaciais
+                    mais acessíveis.
+                    Um dos objetivos mais ambiciosos é a viagem a Marte. <br>
+                    A NASA e outras agências espaciais estão trabalhando em
+                    missões tripuladas ao Planeta Vermelho, visando aprofundar nossa compreensão sobre a possibilidade
+                    de vida
+                    extraterrestre e expandir nossos horizontes.
+                    Além do nosso sistema solar, a exploração espacial tem como objetivo alcançar as estrelas mais
+                    distantes.
+                    Projetos como a sonda Voyager, lançada em 1977, já estão se aventurando no espaço interestelar,
+                    transmitindo
+                    informações valiosas sobre o universo. <br>
+                    A viagem ao espaço não apenas amplia nossos conhecimentos científicos, mas também tem um impacto
+                    significativo
+                    em nossa sociedade. Tecnologias desenvolvidas para a exploração espacial são aplicadas em diversas
+                    áreas, como
+                    comunicações, medicina e transporte.
+                    O futuro da exploração espacial é promissor. Com o avanço da tecnologia, veremos a realização de
+                    missões mais
+                    ousadas, a colonização de outros planetas e a busca por vida extraterrestre. Estamos apenas
+                    começando a
+                    desvendar os segredos do universo. <br>
+                    A viagem ao espaço é uma jornada fascinante que nos permite vislumbrar a grandeza e a diversidade do
+                    universo.
+                    Ela nos desafia a expandir nossos limites, a buscar respostas e a nos maravilhar com as maravilhas
+                    cósmicas.
+                    Então, vamos juntos, explorar as fronteiras do universo! Obrigado!</p>
+            </div>
+            <button class="ler-menos">Leia Menos</button>
+            <script>
+                const botaoLerMais = document.querySelector('.ler-mais');
+                const botaoLerMenos = document.querySelector('.ler-menos');
+                const conteudoEscondido = document.querySelector('.conteudo-escondido');
+
+
+                botaoLerMais.addEventListener('click', function () {
+                    conteudoEscondido.style.display = 'block';
+                    botaoLerMais.style.display = 'none';
+                    botaoLerMenos.style.display = 'block';
+                });
+                botaoLerMenos.addEventListener('click', function () {
+                    conteudoEscondido.style.display = 'none';
+                    botaoLerMais.style.display = 'block';
+                    botaoLerMenos.style.display = 'none';
+                });
+            </script>
+
+            <div class="cards">
+                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                    <img src="img/lua.jpg" " class=" card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lua</h5>
+                        <p class="card-text">Conhecimentos que temos sobre a Lua.</p>
+                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                    </div>
+                </div>
+                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-left: 5px;">
+                    <img src="img/marte.png" style="height: 90%;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Marte</h5>
+                        <p class="card-text">Conhecimentos que temos sobre o Planeta Marte.</p>
+                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                    <img src="img/estrelas.jpg" class=" card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Estrelas</h5>
+                        <p class="card-text">Conhecimentos que temos sobre as Estrelas.</p>
+                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                    </div>
+                </div>
+                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                    <img src="img/buraco-negro.jpg" class=" card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Buracos Negros</h5>
+                        <p class="card-text">Conhecimentos que temos sobre os Buracos Negros.</p>
+                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                    </div>
+                </div>
+                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                    <img src="img/jupiter.jpg" style="height: 90%;" class=" card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Júpiter</h5>
+                        <p class="card-text">Conhecimentos que temos sobre o Planeta Júpiter.</p>
+                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                    </div>
+                </div>
+    </main>
+
+
+    <footer></footer>
+</body>
+
+</html>
