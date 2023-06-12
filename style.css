@@ -108,7 +108,7 @@ nav ul li{
     100% { background-position: 0 0; }
 }
 .button {
-    color: #002bff;
+    color: #fff;
     text-decoration: none;
     font-family: 'Trispace', sans-serif;
 }
@@ -234,6 +234,3 @@ nav ul li{
 }
 
 /* Contact */
-.contact{
-    
-}
