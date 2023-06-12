@@ -4,23 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
+    </style>
     <title>Viagem ao Espaço</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logoastro.png" alt="">
+        <img class="logo-inicial" src="img/logoastro.png" alt="">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Content</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="button" href="">Home</a></li>
+                <li><a class="button" href="">Content</a></li>
+                <li><a class="button" href="">Contact</a></li>
             </ul>
-            <a href="">Quiz</a>
         </nav>
+        <a class="quizbutton" href="">Quiz</a>
     </header>
+    <script src="menu.js"></script>
+
+
 
     <main>
+        <!-- HOME -->
         <section class="conteudo-principal">
             <div float class="conteudo-principal-escrito">
                 <h2 class="titulo">Viagem ao Espaço - Descobrindo as Fronteiras do Universo</h2>
@@ -79,70 +88,103 @@
                     universo.
                     Ela nos desafia a expandir nossos limites, a buscar respostas e a nos maravilhar com as maravilhas
                     cósmicas.
-                    Então, vamos juntos, explorar as fronteiras do universo! Obrigado!</p>
+                    Então, vamos juntos, explorar as fronteiras do universo!</p>
             </div>
             <button class="ler-menos">Leia Menos</button>
-            <script>
-                const botaoLerMais = document.querySelector('.ler-mais');
-                const botaoLerMenos = document.querySelector('.ler-menos');
-                const conteudoEscondido = document.querySelector('.conteudo-escondido');
+            <script src="seemore.js"></script>
+            <!-- CONTEÚDOS -->
+            <div>
+                <div class="cards">
+                    <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 10%;">
+                        <img src="img/lua.jpg" class=" card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lua</h5>
+                            <p class="card-text">Conhecimentos que temos sobre a Lua.</p>
+                            <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                        </div>
+                    </div>
+                    <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-left: 10%;">
+                        <img src="img/marte.png" height="90%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marte</h5>
+                            <p class="card-text">Conhecimentos que temos sobre o Planeta Marte.</p>
+                            <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                        <img src="img/estrelas.jpg" class=" card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Estrelas</h5>
+                            <p class="card-text">Conhecimentos que temos sobre as Estrelas.</p>
+                            <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                        </div>
+                    </div>
+                    <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                        <img src="img/buraco-negro.jpg" class=" card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Buracos Negros</h5>
+                            <p class="card-text">Conhecimentos que temos sobre os Buracos Negros.</p>
+                            <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                        </div>
+                    </div>
+                    <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
+                        <img src="img/jupiter.jpg" style="height: 90%;" class=" card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Júpiter</h5>
+                            <p class="card-text">Conhecimentos que temos sobre o Planeta Júpiter.</p>
+                            <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- CONTACT -->
+                <div>
+                    <div class="contact">
+                        <div class="row text-left">
+                            <div class="col-md-5">
+                                <h1 class="text-bg-dark">Sobre nós</h1>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint est officiis
+                                    asperiores eaque deleniti ipsam repellendus perferendis rerum consequatur. Vel,
+                                    quam praesentium quas quisquam sequi aspernatur nemo facere veritatis sit
+                                    recusandae expedita mollitia,
+                                    fuga ullam.
+                                </p>
+                                <p class="pt-4 text-muted">
+                                    Copyright © Todos os direitos reservados | Coded by <span><a
+                                            style="text-decoration: none;" href="https://www.github.com/kinhoob/">Marco
+                                            Davi</a></span>
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <h4 class="text-light">Newsletter</h4>
+                                <p class="text-muted">Fique por dentro</p>
+                                <form action="" class="form-inline">
+                                    <div class="col pl-">
+                                        <div class="input-group pr-5">
+                                            <input type="text" class="form-control" placeholder="E-mail">
+                                            <div class="input-group-prepend">
+                                                <div class="btn input-group-text">
+                                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-2 col-sm-12 text-center">
+                                <h4 class="text-light ">Siga-nos!</h4>
+                                <p class="text-light">Vamos nos conectar...</p>
+                                <div class="column text-light">
+                                    <a class="button" style="text-decoration: none; color: white;"
+                                        href="https://github.com/kinhoob"><i class="bi bi-github"></i></a>
+                                </div>
 
-                botaoLerMais.addEventListener('click', function () {
-                    conteudoEscondido.style.display = 'block';
-                    botaoLerMais.style.display = 'none';
-                    botaoLerMenos.style.display = 'block';
-                });
-                botaoLerMenos.addEventListener('click', function () {
-                    conteudoEscondido.style.display = 'none';
-                    botaoLerMais.style.display = 'block';
-                    botaoLerMenos.style.display = 'none';
-                });
-            </script>
-
-            <div class="cards">
-                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
-                    <img src="img/lua.jpg" " class=" card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lua</h5>
-                        <p class="card-text">Conhecimentos que temos sobre a Lua.</p>
-                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-left: 5px;">
-                    <img src="img/marte.png" style="height: 90%;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Marte</h5>
-                        <p class="card-text">Conhecimentos que temos sobre o Planeta Marte.</p>
-                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
-                    <img src="img/estrelas.jpg" class=" card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Estrelas</h5>
-                        <p class="card-text">Conhecimentos que temos sobre as Estrelas.</p>
-                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
-                    </div>
-                </div>
-                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
-                    <img src="img/buraco-negro.jpg" class=" card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Buracos Negros</h5>
-                        <p class="card-text">Conhecimentos que temos sobre os Buracos Negros.</p>
-                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
-                    </div>
-                </div>
-                <div class="card text-center text-white bg-dark mb-3" style="width: 18rem; margin-right: 5%;">
-                    <img src="img/jupiter.jpg" style="height: 90%;" class=" card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Júpiter</h5>
-                        <p class="card-text">Conhecimentos que temos sobre o Planeta Júpiter.</p>
-                        <a href="#" class="button-card btn btn-dark">Veja Mais</a>
-                    </div>
-                </div>
     </main>
 
 
